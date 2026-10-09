@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum 01 - Form HTML</title>
+</head>
+<body>
+
+    <br><br>
+    <!-- Tabel utama pembungkus: align="center" membuat form di tengah, border="1" membuat border kotak tanpa CSS -->
+    <table align="center" border="1" cellpadding="15" cellspacing="0">
+        <tr>
+            <td>
+                <h3 align="center">Form Data Anak</h3>
+                
+                <form action="#" method="POST">
+                    <!-- Tabel tata letak input agar rapi sejajar tanpa CSS -->
+                    <table cellpadding="6" cellspacing="0">
+                        <tr>
+                            <td><label for="anak">Nama Anak</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="anak" name="anak" placeholder="Nama Anak" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="umur">Umur Balita</label></td>
+                            <td>:</td>
+                            <td><input type="number" id="umur" name="umur" min="0" max="5" placeholder="Masukkan umur Balita"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><label for="deskripsi">Deskripsi</label></td>
+                            <td valign="top">:</td>
+                            <td><textarea id="deskripsi" name="deskripsi" placeholder="Tulis Diskripsi Anak Anda" rows="4" cols="28"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <br>
+                                <input type="submit" value="Kirim">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
