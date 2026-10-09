@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Laporan Praktikum 1 - Abdullah Muhammad Ash Shiddiq</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 2.2cm 2.2cm 2.2cm 2.2cm;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11.5pt;
+            line-height: 1.45;
+            color: #000;
+        }
+
+        .page {
+            page-break-after: always;
+            position: relative;
+            min-height: 900px;
+        }
+
+        .page:last-child {
+            page-break-after: avoid;
+        }
+
+        /* COVER PAGE */
+        .cover-page {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 840px;
+            padding-top: 25px;
+        }
+
+        .cover-title {
+            font-size: 14pt;
+            font-weight: bold;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+        }
+
+        .cover-logo-container {
+            margin: 45px 0 35px 0;
+        }
+
+        .cover-logo {
+            width: 175px;
+            height: auto;
+        }
+
+        .cover-author {
+            font-size: 12pt;
+            line-height: 1.6;
+            margin-bottom: 50px;
+        }
+
+        .cover-author-title {
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .cover-author-name {
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .cover-group {
+            font-weight: bold;
+        }
+
+        .cover-footer {
+            font-size: 12pt;
+            font-weight: bold;
+            line-height: 1.4;
+            padding-bottom: 20px;
+        }
+
+        /* CONTENT PAGES */
+        h2.section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 14px;
+            margin-bottom: 6px;
+        }
+
+        p.text-content {
+            text-align: justify;
+            margin-bottom: 10px;
+            text-indent: 0;
+        }
+
+        ul.list-content {
+            margin-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        ul.list-content li {
+            margin-bottom: 3px;
+        }
+
+        .screenshot-container {
+            margin: 8px 0 16px 0;
+            text-align: center;
+        }
+
+        .screenshot-img {
+            max-width: 95%;
+            height: auto;
+            border: 1px solid #777;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .link-section {
+            margin-top: 8px;
+        }
+
+        .link-item {
+            margin-bottom: 8px;
+        }
+
+        .link-label {
+            font-weight: bold;
+        }
+
+        .link-url {
+            color: #0044cc;
+            text-decoration: underline;
+            word-break: break-all;
+            display: block;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= PAGE 1: COVER ================= -->
+    <div class="page cover-page">
+        <div class="cover-header">
+            <div class="cover-title">
+                LAPORAN PRAKTIKUM 1<br>
+                DASAR DASAR HTML
+            </div>
+        </div>
+
+        <div class="cover-logo-container">
+            <img class="cover-logo" src="logo_sttnf.png" alt="Logo STT-NF">
+        </div>
+
+        <div class="cover-author">
+            <div class="cover-author-title">Disusun Oleh:</div>
+            <div class="cover-author-name">Abdullah Muhammad Ash Shiddiq &ndash; 0110226105</div>
+            <div class="cover-group">Kelompok : 1 (Jadwal Kamis, 13.00-15.30)</div>
+        </div>
+
+        <div class="cover-footer">
+            PROGRAM STUDI TEKNIK INFORMATIKA<br>
+            SEKOLAH TINGGI TEKNOLOGI TERPADU NURUL FIKRI<br>
+            2026
+        </div>
+    </div>
+
+    <!-- ================= PAGE 2: TUJUAN, ALAT, TEORI, D. LAPORAN ================= -->
+    <div class="page">
+        <h2 class="section-title">A. Tujuan</h2>
+        <p class="text-content">
+            Setelah melakukan praktikum ini, mahasiswa mampu mempelajari dan melakukan implementasi tagtag HTML
+        </p>
+
+        <h2 class="section-title">B. Alat</h2>
+        <ul class="list-content">
+            <li>Komputer/Laptop</li>
+            <li>VS Code</li>
+            <li>Gitlab/Github</li>
+        </ul>
+
+        <h2 class="section-title">C. Teori</h2>
+        <p class="text-content">
+            HyperText Markup Language (HTML) adalah sebuah bahasa markup yang digunakan untuk membuat sebuah halaman web dan menampilkan berbagai informasi di dalam sebuah browser Internet. Bermula dari sebuah bahasa yang sebelumnya banyak digunakan di dunia penerbitan dan percetakan yang disebut dengan SGML (Standard Generalized Markup Language), HTML adalah sebuah standar yang digunakan secara luas untuk menampilkan halaman web. HTML saat ini merupakan standar Internet yang didefinisikan dan dikendalikan penggunaannya oleh World Wide Web Consortium (W3C).
+        </p>
+        <p class="text-content">
+            HTML5 adalah versi terbaru dari HTML yang mengalami banyak penambahan spesifikasi dari versi sebelumnya. HTML5 bukanlah teknologi tunggal, melainkan kumpulan dari teknologi, fitur, dan API yang terdiri dari: revisi kelima HTML, CSS3, dan sekumpulan Javascript API. Dalam praktikum ini, dipelajari pula struktur dasar dokumen HTML5, penggunaan tag dan atribut, penambahan elemen multimedia (gambar), pembuatan list dan tabel, formulir (form) dengan berbagai jenis tipe input, serta elemen-elemen semantic HTML5 seperti &lt;header&gt;, &lt;nav&gt;, &lt;figure&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, dan &lt;footer&gt;.
+        </p>
+
+        <h2 class="section-title">D. Laporan Praktikum</h2>
+        <div class="screenshot-container">
+            <img class="screenshot-img" src="screenshot_praktikum01.png" alt="Screenshot Laporan Praktikum 01">
+        </div>
+    </div>
+
+    <!-- ================= PAGE 3: E. PRAKTIKUM MANDIRI & F. KESIMPULAN ================= -->
+    <div class="page">
+        <h2 class="section-title">E. Praktikum Mandiri</h2>
+        <div class="screenshot-container">
+            <img class="screenshot-img" src="screenshot_praktikummandiri01.png" alt="Screenshot Praktikum Mandiri 01">
+        </div>
+
+        <h2 class="section-title">F. Kesimpulan</h2>
+        <div class="link-section">
+            <div class="link-item">
+                <span class="link-label">&ndash; Link Repository :</span>
+                <a class="link-url" href="https://github.com/shiddiq-21/shiddiq-kelompok-1">https://github.com/shiddiq-21/shiddiq-kelompok-1</a>
+            </div>
+            <div class="link-item">
+                <span class="link-label">&ndash; Link Website GitHub:</span>
+                <a class="link-url" href="https://shiddiq-21.github.io/shiddiq-kelompok-1/praktikummandiri01/kelompok_1_desainuiux_pemweb.html">https://shiddiq-21.github.io/shiddiq-kelompok-1/praktikummandiri01/kelompok_1_desainuiux_pemweb.html</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
