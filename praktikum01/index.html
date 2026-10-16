@@ -1,48 +1,191 @@
 <!DOCTYPE html>
-<html lang="id">
+
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Praktikum 01 - Form HTML</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Form Pemesanan Barang</title>
+
 </head>
+
 <body>
 
-    <br><br>
-    <!-- Tabel utama pembungkus: align="center" membuat form di tengah, border="1" membuat border kotak tanpa CSS -->
-    <table align="center" border="1" cellpadding="15" cellspacing="0">
-        <tr>
-            <td>
-                <h3 align="center">Form Data Anak</h3>
-                
-                <form action="#" method="POST">
-                    <!-- Tabel tata letak input agar rapi sejajar tanpa CSS -->
-                    <table cellpadding="6" cellspacing="0">
-                        <tr>
-                            <td><label for="anak">Nama Anak</label></td>
-                            <td>:</td>
-                            <td><input type="text" id="anak" name="anak" placeholder="Nama Anak" autofocus></td>
-                        </tr>
-                        <tr>
-                            <td><label for="umur">Umur Balita</label></td>
-                            <td>:</td>
-                            <td><input type="number" id="umur" name="umur" min="0" max="5" placeholder="Masukkan umur Balita"></td>
-                        </tr>
-                        <tr>
-                            <td valign="top"><label for="deskripsi">Deskripsi</label></td>
-                            <td valign="top">:</td>
-                            <td><textarea id="deskripsi" name="deskripsi" placeholder="Tulis Diskripsi Anak Anda" rows="4" cols="28"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td colspan="3" align="center">
-                                <br>
-                                <input type="submit" value="Kirim">
-                            </td>
-                        </tr>
-                    </table>
-                </form>
 
-            </td>
-        </tr>
-    </table>
+
+<fieldset><p align="center"><strong>A Web Page</strong>
+
+<br> <input type="text" value="http://pesanan_barang.com"
+
+size="30"></p></fieldset>
+
+
+
+<!--Navigasi Menu-->
+
+<fieldset><p align="center"><input type="text"
+
+value=" Home | Generate Link | History Transaksi | Policy | Logout" size="75">
+
+</p>
+
+</fieldset>
+
+
+
+<!-- Form Pemesanan -->
+
+<form action="index2.html" method="get">
+
+<table cellpadding="5">
+
+<tr>
+
+<!-- Kolom kiri: kotak foto + tombol upload -->
+
+<td valign="top" align="center">
+
+<img src="" alt="" width="120" height="120" style="border:1px solid gray;">
+
+<br><br>
+
+<input type="button" value="Upload foto">
+
+</td>
+
+
+
+<!-- Kolom kanan: isian -->
+
+<td> 
+
+<table cellpadding="5">
+
+<tr>
+
+<td valign="top">Nama Barang :</td>
+
+<td><input type="text" name="nama_barang" size="40"></td>
+
+</tr>
+
+<tr>
+
+<td valign="top">Informasi Barang :</td>
+
+<td><textarea name="info_barang" rows="4" cols="40"></textarea></td>
+
+</tr>
+
+<tr>
+
+<td valign="top">Number Handphone :</td>
+
+<td><input type="text" name="no_hp" value="+62" size="40"></td>
+
+</tr>
+
+<tr>
+
+<td>Bank :</td>
+
+<td>
+
+<select name="bank">
+
+<option value="seabank">seabank</option>
+
+<option value="bca">BCA</option>
+
+<option value="bni">BNI</option>
+
+<option value="bri">BRI</option>
+
+<option value="mandiri">Mandiri</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Email :</td>
+
+<td><input type="text" name="email" value="@gmail.com" size="40"></td>
+
+</tr>
+
+<tr>
+
+<td valign="top">Transaksi :</td>
+
+<td>
+
+<input type="number" name="transaksi" value="1" min="1" max="100" style="width:50px;">
+
+<br>
+
+<small>if the transaction is for 3 person, choose 3 from drop-down list</small>
+
+<br><br>
+
+<input type="checkbox" name="kirim_hp" value="ya" checked> Send to Mobile Phone
+
+<br>
+
+<input type="checkbox" name="kirim_email" value="ya" checked> Send to Email
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">Send to Mobile Phone :</td>
+
+<td><input type="text" name="kirim_ke_hp" value="+62" size="40"></td>
+
+</tr>
+
+<tr>
+
+<td valign="top">Send to Email :</td>
+
+<td><input type="text" name="kirim_ke_email" value="@gmail.com" size="40"></td>
+
+</tr>
+
+<tr>
+
+<td></td>
+
+<td>
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</form>
+
+
 
 </body>
+
 </html>

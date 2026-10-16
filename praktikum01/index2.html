@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hasil Form Pembelian Barang</title>
+	</head>
+	<body>
+		<fieldset>
+			<p align="center">
+				<strong>A Web Page</strong><br>
+				<input
+					type="text"
+					value="http://hasil_pembelianbarang.com"
+					size="35"
+				>
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<p align="center">
+				<input
+					type="text"
+					value=" Home | Register | Policy | About "
+					size="80"
+				>
+			</p>
+		</fieldset>
+
+		<!-- Konten Hasil Pemesanan -->
+		<form action="#" method="get">
+			<table cellpadding="5">
+				<tr>
+					<!-- Kolom kiri: kotak foto -->
+					<td valign="top">
+						<img src="" alt="" width="120" height="120" border="2">
+					</td>
+
+					<!-- Kolom kanan: data pesanan -->
+					<td>
+						<table cellpadding="5">
+							<tr>
+								<td colspan="2">
+									Nama Barang : Jersey Futsal Specs Pro Custom &amp; Sepatu
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Informasi Barang: Warna Navy Blue kombinasi Gold, Size L, Sablon Shiddiq #10
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Jumlah transaksi: 1 Paket Lengkap
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">Pay to : Bank Mandiri (Virtual Account)</td>
+							</tr>
+							<tr>
+								<td>Payment Type :</td>
+								<td>
+									<input
+										type="text"
+										name="payment_type"
+										value="Transfer Bank"
+										size="12"
+									>
+								</td>
+							</tr>
+							<tr>
+								<td>Account Holder :</td>
+								<td>
+									<input
+										type="text"
+										name="account_holder"
+										value="Abdullah Muhammad Ash Shiddiq"
+										size="28"
+									>
+								</td>
+							</tr>
+							<tr>
+								<td>Account No :</td>
+								<td>
+									<input
+										type="text"
+										name="account_no"
+										value="88910-0110226105"
+										size="20"
+									>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="checkbox" name="kirim_hp" value="ya" checked>
+									Send to Mobile Phone<br>
+									<input type="checkbox" name="kirim_email" value="ya" checked>
+									Send to Email
+								</td>
+							</tr>
+							<tr>
+								<td>Send to Mobile Phone :</td>
+								<td>
+									<input
+										id="send_phone"
+										type="text"
+										name="send_phone"
+										value="+62 812-9876-5432"
+										size="25"
+									>
+								</td>
+							</tr>
+							<tr>
+								<td>Send to Email :</td>
+								<td>
+									<input
+										id="send_email"
+										type="text"
+										name="send_email"
+										value="ashshiddiq1910@gmail.com"
+										size="25"
+									>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="submit" value="Pay using QuidLink">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+
+	</body>
+</html>
