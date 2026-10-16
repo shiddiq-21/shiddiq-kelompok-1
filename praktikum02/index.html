@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Pemesanan Burger - The Burger Crafters</title>
 </head>
+
 <body>
 
     <table align="center" border="0" cellpadding="0" cellspacing="0" width="700">
@@ -16,7 +18,7 @@
                     <p><i>Gourmet Artisan Burger Panggang Arang - Kustomisasi Burger Impian Sesuai Selera Anda</i></p>
                     <hr>
                 </center>
-                
+
                 <p>Silakan isi formulir di bawah ini untuk memesan racikan burger kustom favorit Anda:</p>
 
                 <!-- Form Utama mengarah ke hasil.html -->
@@ -31,35 +33,41 @@
                                 <td width="180"><label for="nama"><strong>Nama Lengkap</strong></label></td>
                                 <td width="15">:</td>
                                 <td>
-                                    <input type="text" id="nama" name="nama" size="40" required placeholder="Contoh: Abdullah Muhammad Ash Shiddiq" autofocus>
+                                    <input type="text" id="nama" name="nama" size="40" required
+                                        placeholder="Contoh: Abdullah Muhammad Ash Shiddiq" autofocus>
                                 </td>
                             </tr>
                             <tr>
                                 <td valign="top"><label for="alamat"><strong>Alamat Pengantaran</strong></label></td>
                                 <td valign="top">:</td>
                                 <td>
-                                    <textarea id="alamat" name="alamat" rows="3" cols="42" required placeholder="Alamat lengkap, nomor rumah, RT/RW, dan patokan"></textarea>
+                                    <textarea id="alamat" name="alamat" rows="3" cols="42" required
+                                        placeholder="Alamat lengkap, nomor rumah, RT/RW, dan patokan"></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td><label for="telepon"><strong>Nomor Telepon / WA</strong></label></td>
                                 <td>:</td>
                                 <td>
-                                    <input type="tel" id="telepon" name="telepon" size="40" required placeholder="08xxxxxxxxxx">
+                                    <input type="tel" id="telepon" name="telepon" size="40" required
+                                        placeholder="08xxxxxxxxxx">
                                 </td>
                             </tr>
                             <tr>
                                 <td><label for="email"><strong>Alamat Email</strong></label></td>
                                 <td>:</td>
                                 <td>
-                                    <input type="email" id="email" name="email" size="40" required placeholder="email@nurulfikri.ac.id">
+                                    <input type="email" id="email" name="email" size="40" required
+                                        placeholder="email@nurulfikri.ac.id">
                                 </td>
                             </tr>
                             <tr>
-                                <td valign="top"><label for="instruksi"><strong>Instruksi Pengiriman</strong></label></td>
+                                <td valign="top"><label for="instruksi"><strong>Instruksi Pengiriman</strong></label>
+                                </td>
                                 <td valign="top">:</td>
                                 <td>
-                                    <textarea id="instruksi" name="instruksi" rows="3" cols="42" placeholder="Contoh: Titipkan di satpam pos depan atau hubungi via WA saat sampai"></textarea>
+                                    <textarea id="instruksi" name="instruksi" rows="3" cols="42"
+                                        placeholder="Contoh: Titipkan di satpam pos depan atau hubungi via WA saat sampai"></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -72,20 +80,24 @@
                     <fieldset>
                         <legend><strong>Build Your Dream Burger (Spesifikasi Burger)</strong></legend>
                         <br>
-                        
+
                         <!-- Pilihan Bun & Patty (Radio Button) -->
                         <p><strong>1. Pilih Varian Patty &amp; Bun (Burger Specs):</strong></p>
                         <blockquote>
-                            <input type="radio" id="burger1" name="burger" value="Classic Wagyu Beef Burger (Brioche Bun)" checked>
+                            <input type="radio" id="burger1" name="burger"
+                                value="Classic Wagyu Beef Burger (Brioche Bun)" checked>
                             <label for="burger1">Classic Wagyu Beef Burger (Brioche Bun) - Rp 65.000</label><br>
-                            
-                            <input type="radio" id="burger2" name="burger" value="Crispy Buttermilk Chicken Burger (Sesame Bun)">
+
+                            <input type="radio" id="burger2" name="burger"
+                                value="Crispy Buttermilk Chicken Burger (Sesame Bun)">
                             <label for="burger2">Crispy Buttermilk Chicken Burger (Sesame Bun) - Rp 52.000</label><br>
-                            
-                            <input type="radio" id="burger3" name="burger" value="Double Smokehouse BBQ Beef (Charcoal Bun)">
+
+                            <input type="radio" id="burger3" name="burger"
+                                value="Double Smokehouse BBQ Beef (Charcoal Bun)">
                             <label for="burger3">Double Smokehouse BBQ Beef (Charcoal Bun) - Rp 85.000</label><br>
-                            
-                            <input type="radio" id="burger4" name="burger" value="Truffle Mushroom Angus Burger (Brioche Bun)">
+
+                            <input type="radio" id="burger4" name="burger"
+                                value="Truffle Mushroom Angus Burger (Brioche Bun)">
                             <label for="burger4">Truffle Mushroom Angus Burger (Brioche Bun) - Rp 95.000</label>
                         </blockquote>
 
@@ -96,16 +108,16 @@
                         <blockquote>
                             <input type="checkbox" id="top1" name="topping" value="Extra Melted Red Cheddar" checked>
                             <label for="top1">Extra Melted Red Cheddar (+Rp 10.000)</label><br>
-                            
+
                             <input type="checkbox" id="top2" name="topping" value="Crispy Smoked Beef Bacon" checked>
                             <label for="top2">Crispy Smoked Beef Bacon (+Rp 14.000)</label><br>
-                            
+
                             <input type="checkbox" id="top3" name="topping" value="Caramelized Sweet Onions">
                             <label for="top3">Caramelized Sweet Onions (+Rp 8.000)</label><br>
-                            
+
                             <input type="checkbox" id="top4" name="topping" value="Sauteed Champignon Truffle Mushroom">
                             <label for="top4">Sauteed Champignon Truffle Mushroom (+Rp 16.000)</label><br>
-                            
+
                             <input type="checkbox" id="top5" name="topping" value="Signature Smokey BBQ Sauce">
                             <label for="top5">Signature Smokey BBQ Sauce (+Rp 6.000)</label>
                         </blockquote>
@@ -118,7 +130,8 @@
                                 <td><label for="jumlah"><strong>Jumlah Pesanan (Quantity)</strong></label></td>
                                 <td>:</td>
                                 <td>
-                                    <input type="number" id="jumlah" name="jumlah" min="1" max="25" value="1" style="width: 70px;"> Porsi
+                                    <input type="number" id="jumlah" name="jumlah" min="1" max="25" value="1"
+                                        style="width: 70px;"> Porsi
                                 </td>
                             </tr>
                         </table>
@@ -129,21 +142,17 @@
 
                     <!-- Tombol Submit & Reset -->
                     <center>
-                        <input type="submit" value="Kirim Pesanan Burger" style="padding: 8px 24px; font-weight: bold; cursor: pointer;">
+                        <input type="submit" value="Kirim Pesanan Burger"
+                            style="padding: 8px 24px; font-weight: bold; cursor: pointer;">
                         &nbsp;&nbsp;
                         <input type="reset" value="Reset Form" style="padding: 8px 18px; cursor: pointer;">
                     </center>
 
                 </form>
-
-                <br><br>
-                <center>
-                    <hr>
-                    <small>&copy; 2026 The Burger Crafters &amp; Grill. Praktikum 2 Desain UI/UX &amp; Pemrograman Web STT-NF.</small>
-                </center>
             </td>
         </tr>
     </table>
 
 </body>
+
 </html>

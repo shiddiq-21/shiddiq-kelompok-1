@@ -112,25 +112,5 @@
         </tr>
     </table>
 
-    <!-- Script Pembaca Input Dinamis (Tetap Bekerja Baik Saat Submit Maupun Akses Langsung) -->
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        if (params.has("nama_barang")) {
-            document.querySelector("tr:nth-child(1) td:nth-child(3)").textContent = params.get("nama_barang");
-        }
-        if (params.has("info_barang")) {
-            document.querySelector("tr:nth-child(2) td:nth-child(3)").textContent = params.get("info_barang");
-        }
-        if (params.has("bank")) {
-            document.querySelector("tr:nth-child(5) td:nth-child(3)").textContent = "Transfer " + params.get("bank");
-        }
-        if (params.has("notif_hp_val") || params.has("no_hp")) {
-            document.querySelector("tr:nth-child(8) td:nth-child(3)").textContent = params.get("notif_hp_val") || params.get("no_hp");
-        }
-        if (params.has("notif_email_val") || params.has("email")) {
-            document.querySelector("tr:nth-child(9) td:nth-child(3)").textContent = params.get("notif_email_val") || params.get("email");
-        }
-    </script>
-
 </body>
 </html>

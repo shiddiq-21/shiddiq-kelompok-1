@@ -105,31 +105,5 @@
         </tr>
     </table>
 
-    <!-- Script Pembaca Input Dinamis Form Burger -->
-    <script>
-        const p = new URLSearchParams(window.location.search);
-        if (p.has("nama")) {
-            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(1) td:nth-child(3)").textContent = p.get("nama");
-        }
-        if (p.has("alamat")) {
-            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(2) td:nth-child(3)").textContent = p.get("alamat");
-        }
-        if (p.has("telepon")) {
-            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(3) td:nth-child(3)").textContent = p.get("telepon");
-        }
-        if (p.has("email")) {
-            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(4) td:nth-child(3)").textContent = p.get("email");
-        }
-        if (p.has("instruksi") && p.get("instruksi").trim() !== "") {
-            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(5) td:nth-child(3)").textContent = p.get("instruksi");
-        }
-        if (p.has("burger")) {
-            document.querySelector("fieldset:nth-of-type(2) tr:nth-child(1) td:nth-child(3)").textContent = p.get("burger");
-        }
-        if (p.has("jumlah")) {
-            document.querySelector("fieldset:nth-of-type(2) tr:nth-child(3) td:nth-child(3)").innerHTML = "<b>" + p.get("jumlah") + " Porsi</b>";
-        }
-    </script>
-
 </body>
 </html>
