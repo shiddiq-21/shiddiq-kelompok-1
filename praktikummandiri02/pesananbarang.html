@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang - SportX Gear</title>
+</head>
+<body>
+
+    <table align="center" border="1" cellpadding="15" cellspacing="0" width="750">
+        <tr>
+            <td>
+                <!-- Header Website -->
+                <center>
+                    <small>A Web Page</small><br>
+                    <strong>http://sportx_gear.com/pesanan_barang</strong>
+                    <hr>
+                </center>
+
+                <!-- Menu Navigasi Sesuai Format Praktikum -->
+                <table align="center" border="1" cellpadding="6" cellspacing="0" width="100%">
+                    <tr align="center">
+                        <td width="20%"><a href="#">Home</a></td>
+                        <td width="25%"><a href="#">Katalog Produk</a></td>
+                        <td width="25%"><a href="#">History Transaksi</a></td>
+                        <td width="15%"><a href="#">Kebijakan</a></td>
+                        <td width="15%"><a href="#">Logout</a></td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <!-- Form Pemesanan Barang -->
+                <form action="hasil_pesananbarang.html" method="GET">
+                    <fieldset>
+                        <legend><strong>Formulir Pemesanan Perlengkapan &amp; Jersey Olahraga</strong></legend>
+                        <br>
+                        
+                        <table cellpadding="6" cellspacing="0" width="100%">
+                            <!-- Nama Barang -->
+                            <tr>
+                                <td width="170" valign="top"><strong>Nama Barang</strong></td>
+                                <td width="15" valign="top">:</td>
+                                <td>
+                                    <input type="text" name="nama_barang" size="42" value="Jersey Futsal Pro Custom &amp; Sepatu Specs Accelerator" required>
+                                </td>
+                            </tr>
+
+                            <!-- Informasi Barang -->
+                            <tr>
+                                <td valign="top"><strong>Informasi Barang</strong></td>
+                                <td valign="top">:</td>
+                                <td>
+                                    <textarea name="info_barang" rows="3" cols="40" placeholder="Keterangan ukuran, warna, nomor punggung...">Warna: Navy Blue kombinasi Gold, Ukuran: L Dewasa, Sablon Punggung: Shiddiq #10, Logo Tim: Garuda Futsal</textarea>
+                                </td>
+                            </tr>
+
+                            <!-- Upload Foto Desain -->
+                            <tr>
+                                <td><strong>Upload Desain / Foto</strong></td>
+                                <td>:</td>
+                                <td>
+                                    <input type="file" name="foto_desain">
+                                </td>
+                            </tr>
+
+                            <!-- Nomor Handphone -->
+                            <tr>
+                                <td><strong>Number Handphone</strong></td>
+                                <td>:</td>
+                                <td>
+                                    <input type="text" name="no_hp" size="30" value="+62 812-9876-5432" required>
+                                </td>
+                            </tr>
+
+                            <!-- Bank Pembayaran -->
+                            <tr>
+                                <td><strong>Pilihan Bank</strong></td>
+                                <td>:</td>
+                                <td>
+                                    <select name="bank">
+                                        <option value="Mandiri">Bank Mandiri (Virtual Account)</option>
+                                        <option value="BCA">Bank Central Asia (BCA)</option>
+                                        <option value="BSI">Bank Syariah Indonesia (BSI)</option>
+                                        <option value="BRI">Bank BRI</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- Alamat Email -->
+                            <tr>
+                                <td><strong>Alamat Email</strong></td>
+                                <td>:</td>
+                                <td>
+                                    <input type="email" name="email" size="35" value="ashshiddiq1910@gmail.com" required>
+                                </td>
+                            </tr>
+
+                            <!-- Jumlah Transaksi -->
+                            <tr>
+                                <td><strong>Jumlah Transaksi</strong></td>
+                                <td>:</td>
+                                <td>
+                                    <select name="transaksi">
+                                        <option value="1">1 Paket Lengkap (Jersey + Celana + Kaos Kaki + Sepatu)</option>
+                                        <option value="5">5 Paket Tim Futsal Mini</option>
+                                        <option value="12">12 Paket Satu Tim Lengkap</option>
+                                    </select>
+                                    <br>
+                                    <small><i>*Pilih paket kuantitas pesanan Anda dari menu drop-down list di atas</i></small>
+                                </td>
+                            </tr>
+
+                            <!-- Checkbox Notifikasi -->
+                            <tr>
+                                <td valign="top"><strong>Opsi Konfirmasi</strong></td>
+                                <td valign="top">:</td>
+                                <td>
+                                    <input type="checkbox" id="send_hp" name="notif_hp_check" checked>
+                                    <label for="send_hp">Send to Mobile Phone</label><br>
+                                    
+                                    <input type="checkbox" id="send_email" name="notif_email_check" checked>
+                                    <label for="send_email">Send to Email</label>
+                                </td>
+                            </tr>
+
+                            <!-- Field Send to Mobile Phone -->
+                            <tr>
+                                <td>Send to Mobile Phone</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="text" name="notif_hp_val" size="30" value="+62 812-9876-5432">
+                                </td>
+                            </tr>
+
+                            <!-- Field Send to Email -->
+                            <tr>
+                                <td>Send to Email</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="email" name="notif_email_val" size="35" value="ashshiddiq1910@gmail.com">
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- Tombol Aksi -->
+                    <center>
+                        <input type="submit" value="Kirim Pesanan Barang" style="padding: 8px 24px; font-weight: bold; cursor: pointer;">
+                        &nbsp;&nbsp;
+                        <input type="reset" value="Reset" style="padding: 8px 18px; cursor: pointer;">
+                    </center>
+                </form>
+
+                <br>
+                <center>
+                    <hr>
+                    <small>&copy; 2026 SportX Athletic &amp; Futsal Gear. Praktikum Mandiri 02 Desain UI/UX &amp; Pemrograman Web STT-NF.</small>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pembelian Barang - SportX Gear</title>
+</head>
+<body>
+
+    <table align="center" border="1" cellpadding="15" cellspacing="0" width="750">
+        <tr>
+            <td>
+                <!-- Header Website -->
+                <center>
+                    <small>A Web Page</small><br>
+                    <strong>http://hasil_pembelianbarang.com</strong>
+                    <hr>
+                </center>
+
+                <!-- Menu Navigasi Sesuai Format Praktikum -->
+                <table align="center" border="1" cellpadding="6" cellspacing="0" width="100%">
+                    <tr align="center">
+                        <td width="25%"><a href="pesananbarang.html">Home</a></td>
+                        <td width="25%"><a href="#">Register</a></td>
+                        <td width="25%"><a href="#">Policy</a></td>
+                        <td width="25%"><a href="#">About</a></td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <!-- Rincian Hasil Pemesanan Barang -->
+                <fieldset>
+                    <legend><strong>Konfirmasi &amp; Bukti Rincian Pemesanan Barang</strong></legend>
+                    <br>
+
+                    <table cellpadding="6" cellspacing="0" width="100%">
+                        <tr>
+                            <td width="180"><strong>Nama Barang</strong></td>
+                            <td width="15">:</td>
+                            <td>Jersey Futsal Pro Custom &amp; Sepatu Specs Accelerator</td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><strong>Informasi Barang</strong></td>
+                            <td valign="top">:</td>
+                            <td>Warna Navy Blue kombinasi Gold, Ukuran: L Dewasa, Sablon Punggung: Shiddiq #10, Logo Tim: Garuda Futsal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jumlah Total</strong></td>
+                            <td>:</td>
+                            <td><b>Rp. 485.000,-</b> <i>(Termasuk Pajak &amp; Ongkos Kirim)</i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pay to</strong></td>
+                            <td>:</td>
+                            <td>PT SportX Gear Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Payment Type</strong></td>
+                            <td>:</td>
+                            <td>Transfer Bank (Virtual Account)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Account Holder</strong></td>
+                            <td>:</td>
+                            <td>Abdullah Muhammad Ash Shiddiq</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Account No (VA)</strong></td>
+                            <td>:</td>
+                            <td><b>88910-0110226105</b></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Send to Mobile Phone</strong></td>
+                            <td>:</td>
+                            <td>+62 812-9876-5432</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Send to Email</strong></td>
+                            <td>:</td>
+                            <td>ashshiddiq1910@gmail.com</td>
+                        </tr>
+                    </table>
+                    
+                    <br>
+                    <hr>
+                    <br>
+
+                    <!-- Tombol Pembayaran Sesuai Modul -->
+                    <center>
+                        <button type="button" style="padding: 10px 24px; font-weight: bold; background-color: #0284c7; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                            Pay using Goplink
+                        </button>
+                    </center>
+                    <br>
+                </fieldset>
+
+                <br>
+                <center>
+                    <p>
+                        <a href="pesananbarang.html">&laquo; Kembali ke Form Pemesanan Barang</a>
+                    </p>
+                </center>
+
+                <br>
+                <center>
+                    <hr>
+                    <small><i>Catatan: Halaman ini dibuat untuk keperluan tugas Praktikum Mandiri 02 Desain UI/UX &amp; Pemrograman Web STT-NF.</i></small><br>
+                    <small>&copy; 2026 SportX Athletic &amp; Futsal Gear. All Rights Reserved.</small>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Script Pembaca Input Dinamis (Tetap Bekerja Baik Saat Submit Maupun Akses Langsung) -->
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        if (params.has("nama_barang")) {
+            document.querySelector("tr:nth-child(1) td:nth-child(3)").textContent = params.get("nama_barang");
+        }
+        if (params.has("info_barang")) {
+            document.querySelector("tr:nth-child(2) td:nth-child(3)").textContent = params.get("info_barang");
+        }
+        if (params.has("bank")) {
+            document.querySelector("tr:nth-child(5) td:nth-child(3)").textContent = "Transfer " + params.get("bank");
+        }
+        if (params.has("notif_hp_val") || params.has("no_hp")) {
+            document.querySelector("tr:nth-child(8) td:nth-child(3)").textContent = params.get("notif_hp_val") || params.get("no_hp");
+        }
+        if (params.has("notif_email_val") || params.has("email")) {
+            document.querySelector("tr:nth-child(9) td:nth-child(3)").textContent = params.get("notif_email_val") || params.get("email");
+        }
+    </script>
+
+</body>
+</html>

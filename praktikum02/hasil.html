@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pesanan - Mario's Artisan Pizza</title>
+</head>
+<body>
+
+    <table align="center" border="1" cellpadding="20" cellspacing="0" width="700">
+        <tr>
+            <td>
+                <!-- Header Thank You -->
+                <center>
+                    <h1>THANK YOU FOR YOUR ORDER</h1>
+                    <p><i>Terima kasih telah memesan di <b>Mario's Artisan Pizza &amp; Cucina</b>! Kami telah menerima rincian pesanan Anda:</i></p>
+                    <hr>
+                </center>
+
+                <!-- Informasi Pelanggan -->
+                <fieldset>
+                    <legend><strong>Your Information (Data Pelanggan)</strong></legend>
+                    <blockquote>
+                        <table cellpadding="4" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="160"><strong>Nama Lengkap</strong></td>
+                                <td width="15">:</td>
+                                <td>Abdullah Muhammad Ash Shiddiq</td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><strong>Alamat Pengiriman</strong></td>
+                                <td valign="top">:</td>
+                                <td>Jl. Halim Perdanakusuma No. 19, RT 03/RW 05, Halim, Jakarta Timur</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Nomor Telepon / WA</strong></td>
+                                <td>:</td>
+                                <td>+62 812-9876-5432</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Alamat Email</strong></td>
+                                <td>:</td>
+                                <td>ashshiddiq1910@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><strong>Instruksi Pengiriman</strong></td>
+                                <td valign="top">:</td>
+                                <td>Tolong hubungi via WhatsApp saat kurir sudah tiba di depan gerbang utama.</td>
+                            </tr>
+                        </table>
+                    </blockquote>
+                </fieldset>
+
+                <br>
+
+                <!-- Rincian Pesanan Pizza -->
+                <fieldset>
+                    <legend><strong>Your Pizza (Rincian Pesanan Pizza)</strong></legend>
+                    <blockquote>
+                        <table cellpadding="4" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="160"><strong>Pilihan Pizza / Crust</strong></td>
+                                <td width="15">:</td>
+                                <td>Cheesy Stuffed Crust - Large (8 Slices)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><strong>Topping Tambahan</strong></td>
+                                <td valign="top">:</td>
+                                <td>
+                                    &bull; Extra Mozzarella Melt<br>
+                                    &bull; Smoked Beef Pepperoni<br>
+                                    &bull; Champignon Mushroom &amp; Truffle Oil
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Jumlah Pesanan</strong></td>
+                                <td>:</td>
+                                <td><b>2 Loyang</b></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Estimasi Pengantaran</strong></td>
+                                <td>:</td>
+                                <td>30 &ndash; 40 Menit (Pesanan Sedang Dipanggang)</td>
+                            </tr>
+                        </table>
+                    </blockquote>
+                </fieldset>
+
+                <br>
+
+                <!-- Tombol Navigasi Kembali -->
+                <center>
+                    <p>
+                        <a href="index.html">&laquo; Buat Pesanan Pizza Baru Lainnya</a>
+                    </p>
+                </center>
+
+                <br>
+                <hr>
+                <center>
+                    <small><i>This website is for educational purposes only. No real orders will be processed.</i></small><br>
+                    <small>&copy; 2026 Mario's Artisan Pizza &amp; Cucina. Praktikum 2 Desain UI/UX &amp; Pemrograman Web STT-NF.</small>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Script Pembaca Input Dinamis Form Pizza -->
+    <script>
+        const p = new URLSearchParams(window.location.search);
+        if (p.has("nama")) {
+            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(1) td:nth-child(3)").textContent = p.get("nama");
+        }
+        if (p.has("alamat")) {
+            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(2) td:nth-child(3)").textContent = p.get("alamat");
+        }
+        if (p.has("telepon")) {
+            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(3) td:nth-child(3)").textContent = p.get("telepon");
+        }
+        if (p.has("email")) {
+            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(4) td:nth-child(3)").textContent = p.get("email");
+        }
+        if (p.has("instruksi") && p.get("instruksi").trim() !== "") {
+            document.querySelector("fieldset:nth-of-type(1) tr:nth-child(5) td:nth-child(3)").textContent = p.get("instruksi");
+        }
+        if (p.has("crust")) {
+            document.querySelector("fieldset:nth-of-type(2) tr:nth-child(1) td:nth-child(3)").textContent = p.get("crust");
+        }
+        if (p.has("jumlah")) {
+            document.querySelector("fieldset:nth-of-type(2) tr:nth-child(3) td:nth-child(3)").innerHTML = "<b>" + p.get("jumlah") + " Loyang</b>";
+        }
+    </script>
+
+</body>
+</html>
