@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konfirmasi Pesanan - Mario's Artisan Pizza</title>
+    <title>Konfirmasi Pesanan - The Burger Crafters</title>
 </head>
 <body>
 
@@ -13,7 +13,7 @@
                 <!-- Header Thank You -->
                 <center>
                     <h1>THANK YOU FOR YOUR ORDER</h1>
-                    <p><i>Terima kasih telah memesan di <b>Mario's Artisan Pizza &amp; Cucina</b>! Kami telah menerima rincian pesanan Anda:</i></p>
+                    <p><i>Terima kasih telah memesan di <b>The Burger Crafters &amp; Grill</b>! Kami telah menerima rincian pesanan burger Anda:</i></p>
                     <hr>
                 </center>
 
@@ -45,7 +45,7 @@
                             <tr>
                                 <td valign="top"><strong>Instruksi Pengiriman</strong></td>
                                 <td valign="top">:</td>
-                                <td>Tolong hubungi via WhatsApp saat kurir sudah tiba di depan gerbang utama.</td>
+                                <td>Tolong hubungi via WhatsApp saat kurir sudah tiba di depan gerbang utama komplek.</td>
                             </tr>
                         </table>
                     </blockquote>
@@ -53,34 +53,34 @@
 
                 <br>
 
-                <!-- Rincian Pesanan Pizza -->
+                <!-- Rincian Pesanan Burger -->
                 <fieldset>
-                    <legend><strong>Your Pizza (Rincian Pesanan Pizza)</strong></legend>
+                    <legend><strong>Your Burger (Rincian Pesanan Burger)</strong></legend>
                     <blockquote>
                         <table cellpadding="4" cellspacing="0" width="100%">
                             <tr>
-                                <td width="160"><strong>Pilihan Pizza / Crust</strong></td>
+                                <td width="160"><strong>Pilihan Burger / Patty</strong></td>
                                 <td width="15">:</td>
-                                <td>Cheesy Stuffed Crust - Large (8 Slices)</td>
+                                <td>Double Smokehouse BBQ Beef (Charcoal Bun)</td>
                             </tr>
                             <tr>
                                 <td valign="top"><strong>Topping Tambahan</strong></td>
                                 <td valign="top">:</td>
                                 <td>
-                                    &bull; Extra Mozzarella Melt<br>
-                                    &bull; Smoked Beef Pepperoni<br>
-                                    &bull; Champignon Mushroom &amp; Truffle Oil
+                                    &bull; Extra Melted Red Cheddar<br>
+                                    &bull; Crispy Smoked Beef Bacon<br>
+                                    &bull; Sauteed Champignon Truffle Mushroom
                                 </td>
                             </tr>
                             <tr>
                                 <td><strong>Jumlah Pesanan</strong></td>
                                 <td>:</td>
-                                <td><b>2 Loyang</b></td>
+                                <td><b>2 Porsi</b></td>
                             </tr>
                             <tr>
-                                <td><strong>Estimasi Pengantaran</strong></td>
+                                <td><strong>Estimasi Penyajian</strong></td>
                                 <td>:</td>
-                                <td>30 &ndash; 40 Menit (Pesanan Sedang Dipanggang)</td>
+                                <td>20 &ndash; 30 Menit (Burger Sedang Dipanggang)</td>
                             </tr>
                         </table>
                     </blockquote>
@@ -91,7 +91,7 @@
                 <!-- Tombol Navigasi Kembali -->
                 <center>
                     <p>
-                        <a href="index.html">&laquo; Buat Pesanan Pizza Baru Lainnya</a>
+                        <a href="index.html">&laquo; Buat Pesanan Burger Baru Lainnya</a>
                     </p>
                 </center>
 
@@ -99,13 +99,13 @@
                 <hr>
                 <center>
                     <small><i>This website is for educational purposes only. No real orders will be processed.</i></small><br>
-                    <small>&copy; 2026 Mario's Artisan Pizza &amp; Cucina. Praktikum 2 Desain UI/UX &amp; Pemrograman Web STT-NF.</small>
+                    <small>&copy; 2026 The Burger Crafters &amp; Grill. Praktikum 2 Desain UI/UX &amp; Pemrograman Web STT-NF.</small>
                 </center>
             </td>
         </tr>
     </table>
 
-    <!-- Script Pembaca Input Dinamis Form Pizza -->
+    <!-- Script Pembaca Input Dinamis Form Burger -->
     <script>
         const p = new URLSearchParams(window.location.search);
         if (p.has("nama")) {
@@ -123,11 +123,11 @@
         if (p.has("instruksi") && p.get("instruksi").trim() !== "") {
             document.querySelector("fieldset:nth-of-type(1) tr:nth-child(5) td:nth-child(3)").textContent = p.get("instruksi");
         }
-        if (p.has("crust")) {
-            document.querySelector("fieldset:nth-of-type(2) tr:nth-child(1) td:nth-child(3)").textContent = p.get("crust");
+        if (p.has("burger")) {
+            document.querySelector("fieldset:nth-of-type(2) tr:nth-child(1) td:nth-child(3)").textContent = p.get("burger");
         }
         if (p.has("jumlah")) {
-            document.querySelector("fieldset:nth-of-type(2) tr:nth-child(3) td:nth-child(3)").innerHTML = "<b>" + p.get("jumlah") + " Loyang</b>";
+            document.querySelector("fieldset:nth-of-type(2) tr:nth-child(3) td:nth-child(3)").innerHTML = "<b>" + p.get("jumlah") + " Porsi</b>";
         }
     </script>
 

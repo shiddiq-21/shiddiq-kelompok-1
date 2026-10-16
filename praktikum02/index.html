@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Pemesanan - Mario's Artisan Pizza</title>
+    <title>Form Pemesanan Burger - The Burger Crafters</title>
 </head>
 <body>
 
     <table align="center" border="0" cellpadding="0" cellspacing="0" width="700">
         <tr>
             <td>
-                <!-- Header Restoran Pizza -->
+                <!-- Header Restoran Burger -->
                 <center>
-                    <h1>Mario's Artisan Pizza &amp; Cucina</h1>
-                    <p><i>Autentik Pizza Panggang Tungku Khas Napoli - Nikmati Cita Rasa Terbaik di Setiap Gigitan</i></p>
+                    <h1>The Burger Crafters &amp; Grill</h1>
+                    <p><i>Gourmet Artisan Burger Panggang Arang - Kustomisasi Burger Impian Sesuai Selera Anda</i></p>
                     <hr>
                 </center>
                 
-                <p>Silakan lengkapi formulir pemesanan di bawah ini untuk memesan menu pizza favorit Anda:</p>
+                <p>Silakan isi formulir di bawah ini untuk memesan racikan burger kustom favorit Anda:</p>
 
-                <!-- Form Utama dengan target hasil.html -->
+                <!-- Form Utama mengarah ke hasil.html -->
                 <form action="hasil.html" method="GET">
 
                     <!-- ================= FIELDSET 1: INFORMASI PEMESAN ================= -->
@@ -35,10 +35,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td valign="top"><label for="alamat"><strong>Alamat Pengiriman</strong></label></td>
+                                <td valign="top"><label for="alamat"><strong>Alamat Pengantaran</strong></label></td>
                                 <td valign="top">:</td>
                                 <td>
-                                    <textarea id="alamat" name="alamat" rows="3" cols="42" required placeholder="Nama jalan, nomor rumah, RT/RW, dan patokan"></textarea>
+                                    <textarea id="alamat" name="alamat" rows="3" cols="42" required placeholder="Alamat lengkap, nomor rumah, RT/RW, dan patokan"></textarea>
                                 </td>
                             </tr>
                             <tr>
@@ -59,7 +59,7 @@
                                 <td valign="top"><label for="instruksi"><strong>Instruksi Pengiriman</strong></label></td>
                                 <td valign="top">:</td>
                                 <td>
-                                    <textarea id="instruksi" name="instruksi" rows="3" cols="42" placeholder="Contoh: Tolong hubungi saat sampai di depan gerbang komplek"></textarea>
+                                    <textarea id="instruksi" name="instruksi" rows="3" cols="42" placeholder="Contoh: Titipkan di satpam pos depan atau hubungi via WA saat sampai"></textarea>
                                 </td>
                             </tr>
                         </table>
@@ -68,46 +68,46 @@
 
                     <br>
 
-                    <!-- ================= FIELDSET 2: DESIGN YOUR DREAM PIZZA ================= -->
+                    <!-- ================= FIELDSET 2: BUILD YOUR DREAM BURGER ================= -->
                     <fieldset>
-                        <legend><strong>Design Your Dream Pizza (Spesifikasi Pizza)</strong></legend>
+                        <legend><strong>Build Your Dream Burger (Spesifikasi Burger)</strong></legend>
                         <br>
                         
-                        <!-- Pilihan Ukuran & Crust (Radio Button) -->
-                        <p><strong>1. Pilih Varian Crust &amp; Ukuran Pizza (Pizza Specs):</strong></p>
+                        <!-- Pilihan Bun & Patty (Radio Button) -->
+                        <p><strong>1. Pilih Varian Patty &amp; Bun (Burger Specs):</strong></p>
                         <blockquote>
-                            <input type="radio" id="crust1" name="crust" value="Classic Thin Crust (Personal 4 Slices)" checked>
-                            <label for="crust1">Classic Thin Crust - Personal (4 Slices) - Rp 55.000</label><br>
+                            <input type="radio" id="burger1" name="burger" value="Classic Wagyu Beef Burger (Brioche Bun)" checked>
+                            <label for="burger1">Classic Wagyu Beef Burger (Brioche Bun) - Rp 65.000</label><br>
                             
-                            <input type="radio" id="crust2" name="crust" value="Deep Dish Pan Crust (Medium 6 Slices)">
-                            <label for="crust2">Deep Dish Pan Crust - Medium (6 Slices) - Rp 85.000</label><br>
+                            <input type="radio" id="burger2" name="burger" value="Crispy Buttermilk Chicken Burger (Sesame Bun)">
+                            <label for="burger2">Crispy Buttermilk Chicken Burger (Sesame Bun) - Rp 52.000</label><br>
                             
-                            <input type="radio" id="crust3" name="crust" value="Cheesy Stuffed Crust (Large 8 Slices)">
-                            <label for="crust3">Cheesy Stuffed Crust - Large (8 Slices) - Rp 115.000</label><br>
+                            <input type="radio" id="burger3" name="burger" value="Double Smokehouse BBQ Beef (Charcoal Bun)">
+                            <label for="burger3">Double Smokehouse BBQ Beef (Charcoal Bun) - Rp 85.000</label><br>
                             
-                            <input type="radio" id="crust4" name="crust" value="Artisan Truffle Mushroom Crust (Large 8 Slices)">
-                            <label for="crust4">Artisan Truffle Mushroom Crust - Large (8 Slices) - Rp 135.000</label>
+                            <input type="radio" id="burger4" name="burger" value="Truffle Mushroom Angus Burger (Brioche Bun)">
+                            <label for="burger4">Truffle Mushroom Angus Burger (Brioche Bun) - Rp 95.000</label>
                         </blockquote>
 
                         <hr>
 
                         <!-- Pilihan Topping Tambahan (Checkbox) -->
-                        <p><strong>2. Pilihan Topping Tambahan (Topping Options):</strong></p>
+                        <p><strong>2. Pilihan Topping &amp; Saus Ekstra (Topping Options):</strong></p>
                         <blockquote>
-                            <input type="checkbox" id="top1" name="topping" value="Extra Mozzarella Melt" checked>
-                            <label for="top1">Extra Mozzarella Melt (+Rp 12.000)</label><br>
+                            <input type="checkbox" id="top1" name="topping" value="Extra Melted Red Cheddar" checked>
+                            <label for="top1">Extra Melted Red Cheddar (+Rp 10.000)</label><br>
                             
-                            <input type="checkbox" id="top2" name="topping" value="Smoked Beef Pepperoni" checked>
-                            <label for="top2">Smoked Beef Pepperoni (+Rp 15.000)</label><br>
+                            <input type="checkbox" id="top2" name="topping" value="Crispy Smoked Beef Bacon" checked>
+                            <label for="top2">Crispy Smoked Beef Bacon (+Rp 14.000)</label><br>
                             
-                            <input type="checkbox" id="top3" name="topping" value="Grilled Chicken Breast">
-                            <label for="top3">Grilled Chicken Breast (+Rp 12.000)</label><br>
+                            <input type="checkbox" id="top3" name="topping" value="Caramelized Sweet Onions">
+                            <label for="top3">Caramelized Sweet Onions (+Rp 8.000)</label><br>
                             
-                            <input type="checkbox" id="top4" name="topping" value="Champignon Mushroom &amp; Truffle Oil">
-                            <label for="top4">Champignon Mushroom &amp; Truffle Oil (+Rp 18.000)</label><br>
+                            <input type="checkbox" id="top4" name="topping" value="Sauteed Champignon Truffle Mushroom">
+                            <label for="top4">Sauteed Champignon Truffle Mushroom (+Rp 16.000)</label><br>
                             
-                            <input type="checkbox" id="top5" name="topping" value="Sweet Corn &amp; Paprika Trio">
-                            <label for="top5">Sweet Corn &amp; Paprika Trio (+Rp 10.000)</label>
+                            <input type="checkbox" id="top5" name="topping" value="Signature Smokey BBQ Sauce">
+                            <label for="top5">Signature Smokey BBQ Sauce (+Rp 6.000)</label>
                         </blockquote>
 
                         <hr>
@@ -118,7 +118,7 @@
                                 <td><label for="jumlah"><strong>Jumlah Pesanan (Quantity)</strong></label></td>
                                 <td>:</td>
                                 <td>
-                                    <input type="number" id="jumlah" name="jumlah" min="1" max="25" value="1" style="width: 70px;"> Loyang
+                                    <input type="number" id="jumlah" name="jumlah" min="1" max="25" value="1" style="width: 70px;"> Porsi
                                 </td>
                             </tr>
                         </table>
@@ -129,7 +129,7 @@
 
                     <!-- Tombol Submit & Reset -->
                     <center>
-                        <input type="submit" value="Kirim Pesanan Sekarang" style="padding: 8px 24px; font-weight: bold; cursor: pointer;">
+                        <input type="submit" value="Kirim Pesanan Burger" style="padding: 8px 24px; font-weight: bold; cursor: pointer;">
                         &nbsp;&nbsp;
                         <input type="reset" value="Reset Form" style="padding: 8px 18px; cursor: pointer;">
                     </center>
@@ -139,7 +139,7 @@
                 <br><br>
                 <center>
                     <hr>
-                    <small>&copy; 2026 Mario's Artisan Pizza &amp; Cucina. Praktikum 2 Desain UI/UX &amp; Pemrograman Web STT-NF.</small>
+                    <small>&copy; 2026 The Burger Crafters &amp; Grill. Praktikum 2 Desain UI/UX &amp; Pemrograman Web STT-NF.</small>
                 </center>
             </td>
         </tr>
