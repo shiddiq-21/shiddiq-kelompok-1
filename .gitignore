@@ -2,3 +2,13 @@
 Thumbs.db
 .vscode/
 .idea/
+
+# File Laporan PDF & Folder Assets
+*.pdf
+laporan_assets/
+*.py
+
+# File gambar dokumentasi mentah di root direktori
+/*.jpg
+/*.jpeg
+/*.png
