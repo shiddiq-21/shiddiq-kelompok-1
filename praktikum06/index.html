@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6 - Basic JavaScript</title>
+</head>
+<body>
+    <h1>Belajar Dasar Pemrograman JavaScript</h1>
+    <p>Silakan buka DevTools Console (F12) untuk melihat hasil eksekusi JavaScript.</p>
+
+    <script>
+        // Sesi 1 & 2: Variabel dan Tipe Data
+        const nama = "Abdullah Muhammad Ash Shiddiq";
+        const prodi = "Teknik Informatika";
+        let umur = 19;
+        let nilai = 95;
+        let aktif = true;
+
+        console.log("Nama:", nama);
+        console.log("Program Studi:", prodi);
+        console.log("Umur:", umur);
+        console.log("Nilai:", nilai);
+        console.log("Status Aktif:", aktif);
+        console.log("Tipe Data Nilai:", typeof nilai);
+
+        // Sesi 3: Operator Aritmetika & Perbandingan
+        const tugas = 85;
+        const uts = 80;
+        const uas = 90;
+        const akhir = (tugas * 0.30) + (uts * 0.30) + (uas * 0.40);
+
+        console.log("Nilai Akhir:", akhir);
+        console.log("Status Lulus:", akhir >= 60);
+
+        // Sesi 4: Percabangan (if, else if, else)
+        let nilaiUji = 88;
+        let kategori;
+
+        if (nilaiUji >= 85) {
+            kategori = "A";
+        } else if (nilaiUji >= 70) {
+            kategori = "B";
+        } else if (nilaiUji >= 60) {
+            kategori = "C";
+        } else {
+            kategori = "D";
+        }
+
+        console.log("Nilai Uji:", nilaiUji);
+        console.log("Kategori Grade:", kategori);
+
+        // Sesi 5: Fungsi Modular & Perulangan (for)
+        function hitungDiskon(harga, diskon = 0.10) {
+            return harga - (harga * diskon);
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            let hargaBarang = i * 10000;
+            let totalBayar = hitungDiskon(hargaBarang);
+            console.log("Barang " + i + " | Harga: " + hargaBarang + " | Bayar (Diskon 10%): " + totalBayar);
+        }
+    </script>
+</body>
+</html>
